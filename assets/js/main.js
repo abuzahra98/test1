@@ -2,7 +2,7 @@ const menuBar = document.querySelector('.menu-bar');
 const sideBar = document.querySelector('.sidebar');
 const overlay = document.querySelector('.overlay');
 const lis = document.querySelectorAll('.list li');
-const up = document.querySelector('.up');
+// const up = document.querySelector('.up');
 
 console.log(lis);
 
@@ -22,9 +22,9 @@ lis.forEach(li =>{
         overlay.classList.remove('open')
     })
 })
-up.addEventListener('click',()=>{
-    window.scroll(0,0)
-})
+// up.addEventListener('click',()=>{
+//     window.scroll(0,0)
+// })
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector("header");
     var newContent = document.querySelector(".new-content");

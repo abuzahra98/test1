@@ -2,10 +2,8 @@ const menuBar = document.querySelector('.menu-bar');
 const sideBar = document.querySelector('.sidebar');
 const overlay = document.querySelector('.overlay');
 const lis = document.querySelectorAll('.list li');
-// const up = document.querySelector('.up');
-
-console.log(lis);
-
+ 
+ 
 menuBar.addEventListener('click',() =>{
     sideBar.classList.add('open')
     overlay.classList.add('open')
@@ -22,9 +20,7 @@ lis.forEach(li =>{
         overlay.classList.remove('open')
     })
 })
-// up.addEventListener('click',()=>{
-//     window.scroll(0,0)
-// })
+ 
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector("header");
     var newContent = document.querySelector(".new-content");
@@ -39,12 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var scrollPosition = window.scrollY;
       var width = 900
       if (headerwedth < 800) {
-        console.log('====================================');
-        console.log(headerwedth,'headerwedth');
-        console.log('====================================');
         image.style.display = "none";
-        // image.classList.add("onTop");
-
+ 
       }
       // Show the new-content div when scrolled past the header
       if (scrollPosition > headerHeight&& headerwedth > width) {

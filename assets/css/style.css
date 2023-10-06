@@ -794,7 +794,7 @@ transform: translateY(0%);
 }
 } */
 
-@media (min-width: 994px) {
+/* @media (min-width: 994px) {
   .hidden-section {
     display: none;
   }
@@ -848,7 +848,7 @@ transform: translateY(0%);
       transform: translateY(0%);
     }
   }
-}
+} */
 .first_headline-color {
   color: #4486a0;
 }
@@ -977,7 +977,7 @@ transform: translateY(0%);
   }
 }
 
-.image-about_section {
+/* .image-about_section {
   display: none;
 }
 
@@ -1055,7 +1055,7 @@ transform: translateY(0%);
     opacity: 1;
     transform: translateY(0%);
   }
-}
+} */
 
 .about_image {
   padding: 7rem;

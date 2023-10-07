@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector("header");
     var newContent = document.querySelector(".new-content");
     var image = document.querySelector(".content-about_img");
+    var aaa = document.querySelector(".image-about_section");
+    var ccc = document.querySelector(".content-about_section");
   
     window.addEventListener("scroll", function () {
       // Get the height of the header
@@ -36,6 +38,15 @@ document.addEventListener("DOMContentLoaded", function () {
       var width = 900
       if (headerwedth < 800) {
         image.style.display = "none";
+ 
+      }
+      if (headerwedth < 900) {
+        image.style.display = "none";
+ 
+      } 
+       if (headerwedth < 900) {
+        aaa.style.display = "flex";
+        ccc.style.display = "unset";
  
       }
       // Show the new-content div when scrolled past the header

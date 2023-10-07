@@ -1233,3 +1233,18 @@ transform: translateY(0%);
     font-size: 23px;
 
  }
+
+
+ @media (max-width: 992px) {
+
+  .image-about_section{
+    display: flex;
+  }
+  .content-about_section{
+    display: unset;
+  }
+
+  .new-content{
+    display: none;
+  }
+ }

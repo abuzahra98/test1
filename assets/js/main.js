@@ -44,11 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
         image.style.display = "none";
  
       } 
-       if (headerwedth < 900) {
-        aaa.style.display = "flex";
-        ccc.style.display = "unset";
+      //  if (headerwedth < 900) {
+      //   aaa.style.display = "flex";
+      //   ccc.style.display = "unset";
  
-      }
+      // }
       // Show the new-content div when scrolled past the header
       if (scrollPosition > headerHeight&& headerwedth > width) {
         newContent.style.display = "flex";

@@ -1533,14 +1533,14 @@ transform: translateY(0%);
 }
 
 .image-wrapper {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   margin: 10px;
   text-align: center;
 }
 
 .img5 {
-  margin-inline: 2rem;
+  margin-inline: 5rem;
   border-radius: 5px;
   margin-right: 10px;
   /* Adjust spacing between images */

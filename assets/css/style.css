@@ -578,7 +578,7 @@ body {
 }
 
 .social-empty ul li {
-  margin-inline-end: 15px;
+  margin-inline: 10px;
 }
 
 .up div:last-of-type {
@@ -621,6 +621,9 @@ body {
 .contact-us p a {
   cursor: pointer;
   text-decoration: none;
+}
+.social-empty{
+  text-align: center;
 }
 
 @media (max-width: 1300px) {
@@ -673,9 +676,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* .hidden-section,   .first_headline {
-        display: flex !important;
-    } */
+ 
   .footer-elm {
     padding-inline: 20px;
     width: 100%;
@@ -724,8 +725,7 @@ body {
 
   .contact {
     text-align: center;
-    /* margin-bottom: 150px; */
-  }
+   }
 
   .img-vector {
     margin: 0px;
@@ -776,8 +776,7 @@ body {
 }
 
 @media (max-width: 630px) {
-  /* .contact-content{
-        top: 10px;} */
+ 
   .center {
     display: flex;
     flex-wrap: wrap;
@@ -822,9 +821,7 @@ body {
 }
 
 @media (max-width: 460px) {
-  /* .new-content{
-        padding: 46px 50px;;
-    } */
+ 
   .content {
     padding: 46px 22px;
   }
@@ -881,14 +878,7 @@ body {
     background-size: 130%;
   }
 }
-
-/* .firsSection {
-  background-image: url("/assets/img/header.svg");
-  width: 100%;
-  height: 110vh;
-  background-size: cover;
-} */
-
+ 
 .firsSection {
   position: relative;
   width: 100%;
@@ -904,11 +894,9 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  /* Place the video behind the content */
-}
+ }
 
-/* Add a blue color overlay using a pseudo-element */
-.firsSection::before {
+ .firsSection::before {
   content: "";
   position: absolute;
   top: 0;
@@ -922,48 +910,10 @@ body {
       rgba(0, 0, 0, 0.4) 100%
     ),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #133048;
-  /* Use the color #4C859C as the background color */
-  z-index: 0;
-  /* Place the overlay behind the video */
-}
+   z-index: 0;
+ }
 
-/* .any{
-    display: none;
-  }
-  
-
-  .any:hover{
-    display: block;
-  } */
-
-/* .line {
-    width: 100%;
-    height: 4rem;
-    overflow: hidden;
-    border: 1px solid black;
-    padding: 0;
-    margin-bottom: 16px;
-  }
-.lineUp {
-animation: 2s anim-lineUp ease-out infinite;
-}
-@keyframes anim-lineUp {
-0% {
-opacity: 0;
-transform: translateY(80%);
-}
-20% {
-opacity: 0;
-}
-50% {
-opacity: 1;
-transform: translateY(0%);
-}
-100% {
-opacity: 1;
-transform: translateY(0%);
-}
-} */
+ 
 
 @media (min-width: 994px) {
   .hidden-section {
@@ -1066,21 +1016,9 @@ transform: translateY(0%);
 .first_headline-text {
   font-size: 85px;
 }
-
-/* @media (min-width: 992px) {
-
-  .image-about_section {
-  width: 45%;
-  
-  }
-  
-  .content-about_section {
-  width: 45%;
-  }
-  } */
+ 
 .about__section {
-  /* height: 60rem; */
-  /* height: 80vh; */
+  
 
   min-height: 100vh;
   margin-block-start: 7rem;
@@ -1090,21 +1028,14 @@ transform: translateY(0%);
 }
 
 .about__section-2 {
-  /* height: 60rem; */
-  /* height: 80vh; */
-
-  /* min-height: 100vh; */
-  /* margin: 7rem 0; */
+ 
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .about__section-3 {
-  /* height: 60rem; */
-  /* height: 80vh; */
-
-  /* min-height: 100vh; */
+ 
   margin: 7rem 0;
   align-items: center;
   display: flex;
@@ -1335,10 +1266,7 @@ transform: translateY(0%);
   display: none;
 }
 
-/* .content-about_section2 {
-  display: flex;
-} */
-
+ 
 .hover-section__2:hover .content-about_section {
   display: unset;
   animation: slideUp 1s ease;
@@ -1497,12 +1425,9 @@ transform: translateY(0%);
 
 .image-section {
   overflow-x: scroll;
-  /* Enable horizontal scroll for the section */
-  white-space: nowrap;
-  /* Prevent images from wrapping to the next line */
-  max-width: 100%;
-  /* Adjust the maximum width as needed */
-}
+   white-space: nowrap;
+   max-width: 100%;
+ }
 
 .image-wrapper {
   display: inline-block;
@@ -1515,8 +1440,7 @@ transform: translateY(0%);
   margin-inline: 4rem;
   border-radius: 5px;
   margin-right: 10px;
-  /* Adjust spacing between images */
-}
+ }
 
 .image-section::-webkit-scrollbar {
   display: none;
@@ -1565,17 +1489,10 @@ transform: translateY(0%);
 .container {
   max-width: 1550px !important;
 }
-
-/* section 2 */
-main .sec_2 {
-  /* padding: 173px 0; */
-  /* background-color: #EAEAE7; */
-}
-
+ 
 main .sec_2 .section-hint {
   font-size: 18px;
-  /* font-family: "abd-elrady-regular"; */
-  width: 140px;
+   width: 140px;
   text-align: center;
   color: #d0a860;
   border-bottom: 1px solid #d0a860;
@@ -1609,8 +1526,7 @@ main .sec_2 .values-list .value-item:hover {
 main .sec_2 .values-list .value-item .value-title {
   font-size: 37px;
   width: 18%;
-  /* font-family: "abd-elrady-regular"; */
-}
+ }
 
 main .sec_2 .values-list .value-item .value-img {
   position: absolute;
@@ -1634,8 +1550,7 @@ main .sec_2 .value-img img {
 main .sec_2 .values-list .value-item .value-desc {
   font-size: 16px;
   line-height: 25px;
-  /* font-family: "abd-elrady-pro-regular"; */
-  max-width: 527px;
+   max-width: 527px;
   transition: all 0.5s ease;
   opacity: 0;
 }
@@ -1668,7 +1583,7 @@ main .sec_2 .values-list .value-item .value-img {
 @media (max-width: 992px) {
   main .sec_2 .values-list .value-item {
     align-items: start;
-    padding: 35px 20px 35px 0;
+    padding: 35px 20px 35px 20px;
     flex-direction: column;
     opacity: 1;
   }
@@ -1676,23 +1591,10 @@ main .sec_2 .values-list .value-item .value-img {
     margin-bottom: 18px;
   }
 }
-
-@media (max-width: 992px) {
-  main .sec_2 .values-list .value-item {
-    align-items: start;
-    padding: 35px 20px 35px 0;
-    flex-direction: column;
-    opacity: 1;
-  }
-  main .sec_2 .values-list .value-item .value-title {
-    margin-bottom: 18px;
-  }
-}
+ 
 
 @media (max-width: 576px) {
-  main .sec_2 {
-    /* padding: 20px 0 20px; */
-  }
+ 
   main .sec_2 .values-list {
     margin-top: 20px;
   }
@@ -1701,7 +1603,7 @@ main .sec_2 .values-list .value-item .value-img {
     font-weight: 700;
   }
   main .sec_2 .values-list .value-item .value-desc {
-    font-size: 23px;
+    font-size: 22px;
     opacity: 1;
   }
 }
@@ -1714,7 +1616,10 @@ main .sec_2 .values-list .value-item .value-img {
 @media (max-width: 576px) {
   main .sec_2 .values-list .value-item .value-title {
     width: 75%;
-    /* font-family: "abd-elrady-regular"; */
-  }
+   }
 }
  
+
+.justify{
+  text-align: justify;
+}

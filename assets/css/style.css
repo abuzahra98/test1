@@ -1746,3 +1746,26 @@ main .sec_2 .values-list .value-item .value-img {
 .test2 .move__text2:hover{
   opacity: 1;
 }
+
+.number {
+  font-size: 150px;
+  /* color:white; */
+  position: absolute;
+  right: 0;
+  z-index: -99;
+  top:-25px;
+   color: transparent;
+  text-shadow: 0 0 2px white; /* Add a text shadow with a blur to simulate a border */
+ }
+
+.value-title{
+  margin-right: 7rem;
+}
+
+@media (max-width: 1010px) {
+  .value-title{
+
+    margin-right: 0;
+  }
+
+}

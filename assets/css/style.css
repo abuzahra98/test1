@@ -178,7 +178,8 @@ body {
   width: 260px;
   padding: 50px 10px;
   z-index: 999999;
-  background-image: linear-gradient(#fff, #4486a0);
+  /* background-image: linear-gradient(#fff, #4486a0); */
+  background-color: #4486a0;
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in;
 }
@@ -520,6 +521,12 @@ body {
   color: #fff;
   padding-top: 100px;
 }
+
+.about_image_new {
+  background-image: url("/assets/img/test.svg");
+ width: 100%;
+ height: 520px;
+ }
 
 .footer a {
   color: #fff;
@@ -1325,6 +1332,8 @@ body {
 
 .about_image {
   padding: 7rem;
+}.about_image_new {
+  padding: 7rem;
 }
 
 .about_image2 {
@@ -1385,6 +1394,8 @@ body {
 @media (max-width: 1150px) {
   .about_image {
     padding: 1rem;
+  }  .about_image_new {
+    padding: 1rem;
   }
 }
 
@@ -1396,6 +1407,9 @@ body {
 
 @media (max-width: 992px) {
   .about_image {
+    padding: 0rem;
+  }
+ .about_image_new {
     padding: 0rem;
   }
 
@@ -1622,4 +1636,113 @@ main .sec_2 .values-list .value-item .value-img {
 
 .justify{
   text-align: justify;
+}
+
+
+.move__text{
+  position: absolute;
+  font-size: 48px;
+  color: white;
+  top: 35%;
+  width: 40%;
+  left: 30%;
+  text-align: center;
+}
+
+@media (max-width: 1574px) {
+  .move__text{
+     font-size: 40px;
+   
+  }
+}
+
+@media (max-width: 1330px) {
+  .move__text{
+     font-size: 35px;
+   
+  }
+}
+@media (max-width: 1180px) {
+  .move__text{
+     font-size: 28px;
+   
+  }
+}
+
+
+@media (max-width: 1180px) {
+  .move__text{
+     font-size: 23px;
+   
+  }
+}
+
+.test .move__text{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.test .move__text:hover{
+  opacity: 1;
+}
+
+
+
+
+.move__text2{
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  top: 43%;
+  width: 40%;
+  left: 30%;
+  text-align: center;
+}
+
+@media (max-width: 1574px) {
+  .move__text2{
+     font-size: 22px;
+   
+  }
+}
+
+@media (max-width: 1330px) {
+  .move__text2{
+     font-size: 20px;
+   
+  }
+}
+@media (max-width: 1180px) {
+  .move__text2{
+     font-size: 20px;
+   
+  }
+}
+
+
+@media (max-width: 1180px) {
+  .move__text2{
+     font-size: 20px;
+   
+  }
+}
+
+@media (max-width: 540px) {
+  .move__text2{
+    width: 60%;
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    top: 33%;
+     left: 22%;
+    text-align: center;
+  }
+}
+.test2 .move__text2{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.test2 .move__text2:hover{
+  opacity: 1;
 }

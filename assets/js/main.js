@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector("header");
     var newContent = document.querySelector(".new-content");
     var image = document.querySelector(".content-about_img");
+    var ceo = document.querySelector(".about__section");
     var aaa = document.querySelector(".image-about_section");
     var ccc = document.querySelector(".content-about_section");
   
@@ -44,6 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
         image.style.display = "none";
  
       } 
+      if (scrollPosition > headerHeight ) {
+         
+        ceo.classList.add("about__sectionhover");
+        
+    }
+    if (scrollPosition > headerHeight ) { 
+      ceo.classList.add("about__sectionhover");
+  }
       //  if (headerwedth < 900) {
       //   aaa.style.display = "flex";
       //   ccc.style.display = "unset";

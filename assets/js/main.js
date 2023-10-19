@@ -28,12 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var image = document.querySelector(".content-about_img");
     var ceo = document.querySelector(".about__section");
     var aaa = document.querySelector(".move__text");
-    var ccc = document.querySelector(".content-about_section");
+    var ccc = document.querySelector(".move__text2");
   
     window.addEventListener("scroll", function () {
       // Get the height of the header
       var headerHeight = header.offsetHeight;
       var about1Height = headerHeight + 500;
+      var about2Height = about1Height + headerHeight;
       var headerwedth = header.offsetWidth;
 
       // Get the current scroll position
@@ -47,12 +48,15 @@ document.addEventListener("DOMContentLoaded", function () {
         image.style.display = "none";
  
       } 
-      if (scrollPosition > headerHeight ) {
+      if (scrollPosition > headerHeight-300 ) {
          
         ceo.classList.add("about__sectionhover");
     }
     if (scrollPosition > about1Height ) { 
       aaa.classList.add("move__texthover");
+  }
+    if (scrollPosition > about2Height ) { 
+      ccc.classList.add("move__text2hover");
   }
       //  if (headerwedth < 900) {
       //   aaa.style.display = "flex";

@@ -1535,7 +1535,7 @@ body {
   transition: all 0.5s ease;
 }
 
-  .move__text:hover {
+  .move__texthover {
   opacity: 1;
 }
 
@@ -1607,12 +1607,12 @@ body {
     flex: 2;
   }
 }
-.test2 .move__text2 {
+  .move__text2 {
   opacity: 0;
   transition: all 0.5s ease;
 }
 
-.test2 .move__text2:hover {
+  .move__text2:hover {
   opacity: 1;
 }
 

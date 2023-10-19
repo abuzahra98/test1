@@ -1313,7 +1313,11 @@ body {
 } */
 
 .about_image {
-  padding: 7rem;
+  padding: 7rem 3rem 7rem 7rem;
+
+}
+.about_image_3 {
+  padding: 7rem 7rem 7rem 3rem;
 }
 .about_image_new {
   padding: 7rem;
@@ -1377,6 +1381,8 @@ body {
 @media (max-width: 1150px) {
   .about_image {
     padding: 1rem;
+  } .about_image_3 {
+    padding: 1rem;
   }
   .about_image_new {
     padding: 1rem;
@@ -1391,6 +1397,8 @@ body {
 
 @media (max-width: 992px) {
   .about_image {
+    padding: 0rem;
+  } .about_image_3 {
     padding: 0rem;
   }
   .about_image_new {
@@ -1573,9 +1581,10 @@ body {
 }
 .button_custom {
   background-color: #4486a0;
-  padding: 15px 63px;
-  border-radius: 0px 25px 0px 25px;
-  border: none;
+  width: 236px;
+  height: 80px;
+  border-radius: 0px 25px;
+    border: none;
   color: white;
   font-size: 18px;
   margin-block-start: 2rem;

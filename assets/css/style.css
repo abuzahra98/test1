@@ -1,23 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap");
-
+ 
+@font-face {
+  font-family: 'DIN Next LT Arabic';
+  src: url('/assets/DINNEXTLTARABIC-LIGHT-2-2.ttf') format('woff2');
+   font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   /* font-family: 'DIN Next LT Arabic',  */
-  font-family: "Noto Sans Arabic", sans-serif;
 }
 
 body {
-  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: 'DIN Next LT Arabic', sans-serif;
 }
 
 /* Apply the font to specific elements */
 h1,
 h2,
 p {
-  font-family: "Noto Sans Arabic", sans-serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
 }
 
 a {
@@ -53,7 +57,11 @@ body {
   position: absolute;
   top: 0;
   padding: 86px 90px;
-  font-family: "Noto Sans Arabic", sans-serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
+}
+.content2 {
+  text-align: justify;
+    padding-left: 100px;  /* font-family: "Noto Sans Arabic", sans-serif; */
 }
 
 .onTop {
@@ -69,7 +77,7 @@ body {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 12px 90px 6px 90px;
-  font-family: "Noto Sans Arabic", sans-serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
 }
 
 .navbar {
@@ -459,7 +467,7 @@ body {
   box-shadow: 0px 10px 20px rgba(172, 87, 188, 0.3);
   border-radius: 15px;
   font-size: 10px;
-  font-family: "Noto Sans Arabic", sans-serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
   margin-top: 90px;
   margin-bottom: 40px;
 }
@@ -516,16 +524,12 @@ body {
   /* width: 100%;
   height: 110vh;
   background-size: cover; */
-  background: #4486A0;
+  background-image: url("/assets/img/FOOTER.svg");
   color: #fff;
   padding-top: 100px;
+  background-size: cover;
 }
-
-.sx{
-  background-image: url("/assets/img/Maddeda.svg");
-
-}
-
+ 
 .about_image_new {
   background-image: url("/assets/img/test.svg");
   width: 100%;
@@ -555,7 +559,7 @@ body {
   /* margin-right: 30px; */
   /* padding-bottom: 144px; */
   padding-inline: 100px;
-  padding-top: 150px;
+  padding-top: 70px;
   padding-bottom: 150px;
   display: flex;
   width: 100%;
@@ -586,6 +590,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-block-end:30px ;
+
 }
 
 .social-empty ul li {
@@ -603,7 +609,7 @@ body {
 
 .important-links ul li {
   text-decoration: none;
-  margin-block-end: 10px;
+  margin-block-end: 22px;
 }
 
 .important-links ul li a {
@@ -612,7 +618,7 @@ body {
 
 .contact-us ul li {
   text-decoration: none;
-  margin-block-end: 10px;
+  margin-block-end: 22px;
 }
 
 .contact-us ul li a {
@@ -834,6 +840,9 @@ body {
     padding: 46px 22px;
   }
 
+  .content2 {
+    padding: 46px 0px 40px 22px;  }
+
   .contact-content {
     top: 10px;
   }
@@ -893,94 +902,89 @@ body {
   height: 110vh;
   overflow: hidden;
 }
-
-#video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.firsSection::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0.8;
-  height: 100%;
-  background: linear-gradient(
+  #video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .firsSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+    height: 100%;
+    background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.4) 100%
-    ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #133048;
-  z-index: 0;
+      ),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #133048;
+      z-index: 0;
+      /* background: url('../img/header.png'); */
+      
+    }
+    
+   
+  .firsSection2 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.133) 1%, rgba(0, 0, 0, 0.773) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));  
+  }
+    .firsSection2::before {
+      content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   height: 100%;
+  
+  z-index: -999;
+  background: url('../img/main-about.svg');
+
 }
 
 @media (min-width: 994px) {
-  .hidden-section {
-    display: none;
-  }
 
+  
+  
   .hover-section:hover .hidden-section {
-    display: flex;
-    animation: slideDown 1s ease-in;
+    transition: visibility 0.3s, opacity 0.3s; /* Add a transition effect */
+
+    opacity: 1;  
   }
 
-  @keyframes slideDown {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
+  .hidden-section {
+    transition: visibility 0.3s, opacity 0.3s; /* Add a transition effect */
 
-    20% {
-      opacity: 0;
-    }
+    visibility: visible; 
+    opacity: 0;  
 
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
   }
 
+  
+ 
   .first_headline {
-    display: none;
+    visibility: hidden; /* Initially, set the visibility to hidden */
+    opacity: 0; /* Initially, set opacity to 0 to make it completely transparent */
+    transition: visibility 0.3s, opacity 0.3s; /* Add a transition effect */
   }
 
   .hover-section:hover .first_headline {
-    display: flex;
-    animation: slideUp 1s ease;
-  }
+    visibility: visible; 
+    opacity: 1;  
+   }
 
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-
-    20% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
+   
 }
 
 .first_headline-color {
@@ -993,26 +997,26 @@ body {
 
 .headline_second {
   position: absolute;
-  top: 420px;
-  font-family: "Noto Sans Arabic", sans-serif;
+  top: 480px;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
 }
 
 .headline_therd {
   position: absolute;
   top: 570px;
-  font-family: "Noto Sans Arabic", sans-serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
 }
 
 .headline_forth {
   position: absolute;
   top: 600px;
-  font-family: "Noto Sans Arabic", sans-serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
 }
 
 .content-new {
   position: absolute;
   top: 300px;
-  font-family: "Noto Sans Arabic", sans-serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
 }
 
 .therd_text {
@@ -1173,6 +1177,8 @@ body {
 
   .firsSection {
     height: 70vh;
+  }.firsSection2 {
+    height: 80vh;
   }
 
   .about__section {
@@ -1417,13 +1423,13 @@ body {
     display: unset;
   }
 
-  .new-content {
-    display: none;
-  }
+ 
 }
-
+.new-content {
+  display: none;
+}
 .aaa {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -1511,7 +1517,7 @@ body {
   color: white;
   top: 35%;
   width: 40%;
-  left: 30%;
+  left: 34%;
   text-align: center;
 }
 
@@ -1553,7 +1559,7 @@ body {
   color: white;
   top: 43%;
   width: 40%;
-  left: 30%;
+  left: 25%;
   text-align: center;
 }
 

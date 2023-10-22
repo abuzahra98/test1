@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get the height of the header
       var headerHeight = header.offsetHeight;
       var about1Height = headerHeight + 500;
-      var about2Height = about1Height + headerHeight;
+      var about2Height = about1Height + 300;
       var headerwedth = header.offsetWidth;
 
       // Get the current scroll position
@@ -48,13 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
         image.style.display = "none";
  
       } 
-      if (scrollPosition > headerHeight-300 ) {
+    //   if (scrollPosition > headerHeight-300 ) {
          
-        ceo.classList.add("about__sectionhover");
-    }
-    if (scrollPosition > about1Height ) { 
-      aaa.classList.add("move__texthover");
-  }
+    //     ceo.classList.add("about__sectionhover");
+    // }
+  //   if (scrollPosition > about1Height ) { 
+  //     aaa.classList.add("move__texthover");
+  // }
     if (scrollPosition > about2Height ) { 
       ccc.classList.add("move__text2hover");
   }
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
  
       // }
       // Show the new-content div when scrolled past the header
-      if (scrollPosition > headerHeight&& headerwedth > width) {
+      if (scrollPosition > headerHeight-100 && headerwedth > width) {
         newContent.style.display = "flex";
         newContent.classList.add("onTop");
         console.log('eee');

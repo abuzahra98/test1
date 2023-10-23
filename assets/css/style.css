@@ -1112,6 +1112,12 @@ body {
 }
 
 .par-width {
+  color: #43434A;
+text-align: justify;
+ font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;  
   width: 75%;
 }
 
@@ -1470,6 +1476,7 @@ body {
 }
 
 .last_section {
+  margin-top: 2rem;
   width: 30%;
   text-align: center;
 }
